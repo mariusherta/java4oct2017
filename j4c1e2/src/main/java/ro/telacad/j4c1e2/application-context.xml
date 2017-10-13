@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+">
+    
+    <bean id="punct" class="ro.telacad.j4c1e2.beans.Punct">
+        <constructor-arg value="10" />
+        <constructor-arg value="20" />
+    </bean>
+    
+    <bean id="cerc" class="ro.telacad.j4c1e2.beans.Cerc">
+        <constructor-arg ref="punct" />
+        <constructor-arg value="50" />
+    </bean>
+
+</beans>
